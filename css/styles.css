@@ -39,13 +39,9 @@ legend {
     font-weight: 800;
 }
 
-.form-campos {
-    display: flex;
-    gap: var(--spacing-2);
-}
-
-.form-campos div {
-    margin-right: var(--spacing-1);
+input {
+    width: 100px;
+    height: 50px;
 }
 
 .btn-container {
