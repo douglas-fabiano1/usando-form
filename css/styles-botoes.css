@@ -2,4 +2,30 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: var(--font-body), sans-serif;
+}
+
+:root {
+    --font-body: "Inter";
+    --color-blue-900: rgb(25, 25, 121);
+    --radius: 5px;
+}
+
+body {
+    color: var(--color-blue-900);
+}
+
+h2 {
+    text-align: center;
+    margin: 1rem;
+}
+
+form {
+    width: 90%;
+    margin: 1rem auto;
+    text-align: center;
+}
+
+button {
+    padding: 3px;
 }
