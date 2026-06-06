@@ -39,11 +39,6 @@ legend {
     font-weight: 800;
 }
 
-input {
-    width: 100px;
-    height: 50px;
-}
-
 .btn-container {
     display: flex;
     justify-content: flex-end;
@@ -51,7 +46,6 @@ input {
 }
 
 .btn {
-    margin-top: var(--spacing-1);
     padding: var(--spacing-1) var(--spacing-2);
     background-color: var(--color-blue-100);
     color: var(--color-light);
