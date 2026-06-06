@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Campos para números</title>
+    <title>Campos para datas</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
@@ -13,23 +13,33 @@
 
 <body>
     <main>
-        <form name="form-cadastro" id="form-cadastro" method="post" action="endereco-da-aplicacao">
+        <form name="form-cadastro" id="form-cadastro" method="get" action="">
             <fieldset class="dados-usuario">
-                <legend>Campos para números</legend>
+                <legend>Campos para datas</legend>
                 <section class="form-campos">
-                    <div>
-                        <label for="valor-numerico">Valor Numérico</label>
-                        <input type="number" name="valor-numerico" id="valor-numerico" required min="10" max="100"
-                            step="5" placeholder="Ex: 99">
+                    <div class="span-2">
+                        <label for="data">Data</label>
+                        <input type="date" name="data" id="data" required>
                     </div>
                     <div>
-                        <label for="barra-valores">Escala de Valores</label>
-                        <input type="range" name="barra-valores" id="barra-valores" min="10" max="200" step="20">
+                        <label for="hora">Hora</label>
+                        <input type="time" name="hora" id="hora" required>
+                    </div>
+                    <div>
+                        <label for="data-hora">Data/Hora</label>
+                        <input type="datetime-local" name="data-hora" id="data-hora" required>
+                    </div>
+                    <div>
+                        <label for="semana">Semana</label>
+                        <input type="week" name="semana" id="semana" required>
+                    </div>
+                    <div>
+                        <label for="mes">Mês</label>
+                        <input type="month" name="mes" id="mes" required>
                     </div>
                 </section>
                 <div class="btn-container">
-                    <button type="submit" id="recupera-valor" name="recupera-valor" class="btn">Recuperar
-                        valores</button>
+                    <button type="submit" id="datas" name="datas" class="btn">Salvar datas</button>
                 </div>
             </fieldset>
         </form>
